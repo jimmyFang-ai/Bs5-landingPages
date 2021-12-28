@@ -1,0 +1,11 @@
+.header {
+    height: 545px;
+    background: no-repeat bottom center;
+    background-size: cover;
+}
+
+@include media-breakpoint-up(sm) { 
+    .header {
+        height: 627px;
+    }
+}

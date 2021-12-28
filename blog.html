@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs5_blog練習</title>
+     <!-- google icons -->
+     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+     rel="stylesheet">
+     <!--google icons 無邊框-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+     rel="stylesheet"> 
+    <!-- 因為scss檔案在瀏覽器是無法讀取，必須將檔案路徑建立在all.css -->
+     <link rel="stylesheet" href="./stylesheets/all.css">
+</head>
+<body>
+    <div class="container">
+         <!-- 返回頂端 toTop -->
+        <div class="toTop position-fixed">
+              <a class="text-dark" href="#">
+                <span class="material-icons-outlined display-4">
+                    arrow_circle_up
+                </span>
+              </a>
+         </div>
+
+          <!-- 部落格置頂標題 -->
+         <header class="py-3  text-center border-bottom">
+             <a href="#" class="fs-2 text-dark  text-decoration-none fst-italic fw-bold">吉米的前端筆記</a>
+         </header>
+         
+         <!-- 導覽列 -->
+         <div class="overflow-auto py-1">
+            <nav class="nav justify-content-between flex-nowrap text-nowrap">
+              <a class="nav-link  link-secondary  fw-bolder"  href="#">HTML</a>
+              <a class="nav-link  link-secondary  fw-bolder" href="#">CSS</a>
+              <a class="nav-link  link-secondary  fw-bolder" href="#">JavaScript</a>
+              <a class="nav-link  link-secondary  fw-bolder" href="#">理財</a>
+              <a class="nav-link  link-secondary  fw-bolder" href="#">興趣</a>
+              <a class="nav-link  link-secondary  fw-bolder" href="#">閱讀好書</a>
+              <a class="nav-link  link-secondary  fw-bolder" href="#">育兒分享</a>
+            </nav>
+          </div>
+
+          <!-- hero 背景圖 -->
+          <div class="p-4 p-md-5 bg-cover bg-p-center mb-4 rounded-3" style="background-image:url('https://images.unsplash.com/photo-1503072000956-b1ba82f2a278?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')">
+                <!-- 套用部分格線系統， col-md-6  是在平板以上呈現66.66% 寬度，單純要套用寬度，並沒有要調整額外的排版樣式 -->
+                <div class="col-md-8 text-white">
+                    <h1 class="display-4 fst-ltalic">科技的進步，始終來自解決人的需求</h1>
+                    <p class="lead">沒有神一般的技術，唯有不斷刻意練習、和找出問題並解決寫下來的技術文章，一步一步走才能走得快。</p>
+                    <a class="mb-0 text-white text-decoration-none" href="#">繼續閱讀</a>
+               </div>
+          </div>
+
+           <!-- 水平卡片排版技巧 -->
+           <div class="row">
+               <div class="col">
+                 <!-- 卡片 flex-row 讓內容水平排列 -->
+                   <div class="card">
+                       <div class="row">
+                           <div class="col"></div>
+                           <div class="col-4">
+                               <img class="img-fluid rounded-end" src="https://images.unsplash.com/photo-1611871233475-7c874af9ad2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHJ1bnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+             
+           </div>
+          
+    </div>
+    <!-- 表尾 -->
+   <footer class="bg-dark py-3 text-center">
+          <p class="text-white mb-0">六角學院 Bootstrap 練習版型</p> 
+   </footer>
+</body>
+</html> 

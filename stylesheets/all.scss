@@ -1,5 +1,5 @@
-// 客製化bootstrap 匯入
 
+// 客製化bootstrap 匯入
 // 1.  必須先匯入bootstrap funtions ，再匯入自己客製化的 bootstrap 檔案才能運作
 @import "../node_modules/bootstrap/scss/functions";
 
@@ -57,3 +57,11 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 建立獨立元件樣式
+
+// 引入google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+// components
+@import "./components/toTop";
+
+@import "./components/header";
