@@ -54,12 +54,13 @@ $utilities: map-merge(
     // scss-docs-end utils-display
     // scss-docs-start utils-shadow
     "shadow": (
+      responsive: true,
       property: box-shadow,
       class: shadow,
       values: (
         null: $box-shadow,
         sm: $box-shadow-sm,
-        lg: $box-shadow-lg,
+        // lg: $box-shadow-lg, //取消lg 用來製作中斷點
         none: none,
       )
     ),

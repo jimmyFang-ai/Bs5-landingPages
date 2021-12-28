@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landingPage-Bs5練習</title>
+     <!-- google icons -->
+     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+     rel="stylesheet">
+     <!--google icons 無邊框-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+     rel="stylesheet"> 
+    <!-- 因為scss檔案在瀏覽器是無法讀取，必須將檔案路徑建立在all.css -->
+    <link rel="stylesheet" href="./stylesheets/all.css">
+</head>
+<body>
+    
+    <!-- 導覽列 -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center me-0 fw-bold" href="index.html"><span class="material-icons text-info">
+            fiber_manual_record
+            </span>
+            小懶蟲</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#">服務介紹</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="#">方案費用</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="faq.html">常見問題</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-info" aria-current="page" href="#">方案費用</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+    <!-- 常見問題標題 -->
+    <header class="py-6" style="background-image: url('./img/bg_paper.png');">
+         <div class="container text-center py-2">
+                <h5 class="fs-5 text-info fw-bold">Q&A</h5>
+                <h2 class="fw-bold">常見問題</h2>
+         </div>
+    </header>
+  
+
+    <!-- 常見問題內文  手風琴 (Accordion)元件製作 -->
+    <section class="container py-6">
+        <div class="row justify-content-center">
+            <div class="accordion col-md-8" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        方案的服務內容可以調整嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        興雙級信片有代意沒錢的壓。快不意去人，河過國了文的主府把期下北更座濟頭基身地真；汽拿院設數，聲身功親一論。此告心行條？個升再些，時比國驗評來爸不生球，來也實列南眼新師是業音到英交第許廠天人半中商物差。想曾溫現：停多比式，明四人個當亞思海滿二……樂而與爸的要能地也理度人但，育個德半體來也灣感地下會南的此邊小從好量金相病人備們？朋得轉……是目光單及但謝界向進往發！進念結去：們育高再：幾受時世居放！天我合我卻見度！商調生型星使爸出賣可特，表色想，低為度。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        一次只能購買一年嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        付款方式有哪些呢？
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+
+
+     <!-- 其他協助 -->
+     <section class="py-6   bg-light">
+        <h2 class="text-center fw-bold mb-5">需要其他協助嗎？</h2>
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-3 mb-4">
+            <a href="#" class="d-block bg-white shadow rounded py-4 text-center">
+              <button type="tel" class="btn  fs-5"><span class="material-icons-outlined text-info  align-middle">phone</span>
+               07-555-666</button>
+            </a>
+          </div>
+          <div class="col-11 col-lg-3 mb-4">
+           <a href="#" class="d-block bg-white shadow rounded py-4 text-center">
+             <button type="button" class="btn  fs-5">
+               <span class="material-icons-outlined text-info  align-middle"> thumb_up</span>
+                 我就是個小懶蟲
+             </button>
+           </a>
+          </div>
+          <div class="col-11 col-lg-3">
+           <a href="faq.html" class="d-block bg-white  shadow rounded py-4 text-center">
+             <button type="button" class="btn  fs-5">
+               <span class="material-icons-outlined text-info  align-middle">question_mark </span>                
+               常見問題
+             </button>
+           </a>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+      <footer class="py-3 text-center bg-secondary">
+       <p class="small text-white mb-0">Copyright © 2021 小懶蟲.All rights reserved.</p>
+     </footer>
+
+      <!-- bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
