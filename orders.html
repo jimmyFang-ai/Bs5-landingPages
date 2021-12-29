@@ -66,7 +66,7 @@
                 <div class="col-lg-8">
                     <form action="#" class="px-lg-5 py-lg-6 shadow-lg">
                         <h3 class="deco-line mb-3 fw-bold">選擇方案</h3>
-                        <div class="row row-cols-1 row-cols-md-3">
+                        <div class="row row-cols-1 row-cols-md-3 mb-5">
                             <div class="col mb-2 mb-md-0">
                                 <button type="button" class="btn btn-outline-info text-dark w-100 py-3 btn-lg fw-bold">
                                   小小搭懶蟲<br class="d-none d-md-block">
@@ -85,6 +85,66 @@
                                     客服詢價
                                  </button>
                             </div>
+                        </div>
+                        <h3 class="deco-line mb-3 fw-bold">填寫資料</h3>
+                        <div class="row row-cols-1">
+                           <div class="col-md-6 mb-3">
+                             <label for="firstName" class="form-label">名字</label>
+                             <input type="text"  class="form-control"  id="firstName">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="lastName" class="form-label">姓氏</label>
+                              <input type="text"  class="form-control"  id="lastName">
+                             </div>
+                             <div class="col mb-3">
+                              <label for="tel" class="form-label">手機號碼</label>
+                              <input type="tel" class="form-control"  id="tel">
+                             </div>
+                             <div class="col mb-3">
+                              <label for="email" class="form-label">電子郵件</label>
+                              <input type="email" class="form-control"  id="email">
+                             </div>
+                             <div class="col mb-3">
+                              <label for="address" class="form-label">住址</label>
+                              <input type="text" class="form-control"  id="address">
+                             </div>
+                             <div class="col mb-3">
+                              <label for="time" class="form-label">State</label>
+                              <select id="time" class="form-select">
+                                <option selected>13:00-17:00</option>
+                                <option>18:00-2400</option>
+                              </select>
+                             </div>
+                             <div class="col mb-3">
+                              <label for="address" class="form-label">住址</label>
+                              <input type="text" class="form-control"  id="address">
+                             </div>
+                             <div class="col mb-3">
+                              <span class="mb-2">加購服務</span>
+                              <div class="d-flex flex-wrap">
+                                <div class="form-check me-3">
+                                  <input type="checkbox" id="clean" class="form-check-input">
+                                  <label for="clean" class="form-label">每週一清掃家裡+100</label>
+                                </div>
+                                <div class="form-check  me-3">
+                                 <input type="checkbox" id="massage" class="form-check-input">
+                                 <label for="massage" class="form-label">按摩+50</label>
+                               </div>
+                               <div class="form-check">
+                                 <input type="checkbox" id="talk" class="form-check-input">
+                                 <label for="talk" class="form-label">聽你說話+150</label>
+                               </div>
+                              </div>
+                               
+                               
+                             </div>
+                             <div class="col mb-5">
+                               <label for="description" class="form-label">備註說明</label>
+                               <textarea  id="description" cols="30" rows="10" class="d-block w-100" style="height: 86px;"></textarea>
+                             </div>
+                             <div class="col">
+                               <button type="button" class="btn btn-info w-100 fw-bold">選擇方案</button>
+                             </div>
                         </div>
                     </form>
                 </div>
