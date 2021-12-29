@@ -19,7 +19,7 @@
          <!-- 返回頂端 toTop -->
         <div class="toTop position-fixed">
               <a class="text-dark" href="#">
-                <span class="material-icons-outlined display-4">
+                <span class="material-icons-outlined display-4 text-success">
                     arrow_circle_up
                 </span>
               </a>
@@ -44,7 +44,7 @@
           </div>
 
           <!-- hero 背景圖 -->
-          <div class="p-4 p-md-5 bg-cover bg-p-center mb-4 rounded-3" style="background-image:url('https://images.unsplash.com/photo-1503072000956-b1ba82f2a278?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')">
+          <div class="p-4 p-md-5 bg-cover bg-p-center mb-5 rounded-3" style="background-image:url('https://images.unsplash.com/photo-1503072000956-b1ba82f2a278?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')">
                 <!-- 套用部分格線系統， col-md-6  是在平板以上呈現66.66% 寬度，單純要套用寬度，並沒有要調整額外的排版樣式 -->
                 <div class="col-md-8 text-white">
                     <h1 class="display-4 fst-ltalic">科技的進步，始終來自解決人的需求</h1>
@@ -54,21 +54,148 @@
           </div>
 
            <!-- 水平卡片排版技巧 -->
-           <div class="row">
+           <div class="row row-cols-1 row-cols-lg-2 mb-5 gy-3 gy-lg-0">
                <div class="col">
                  <!-- 卡片 flex-row 讓內容水平排列 -->
-                   <div class="card">
-                       <div class="row">
-                           <div class="col"></div>
-                           <div class="col-4">
-                               <img class="img-fluid rounded-end" src="https://images.unsplash.com/photo-1611871233475-7c874af9ad2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHJ1bnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                   <div class="card h-100 flex-row">
+                       <div class="row g-0">
+                           <div class="col">
+                                 <div class="p-4 d-flex flex-column h-100">
+                                     <strong class="d-inline-block text-success mb-2">興趣</strong>
+                                     <h3 class="mb-2">慢跑能提升專注力</h3>
+                                     <p class="text-muted">十二月 12</p>
+                                     <p class="card-text">慢跑，除了能身體健康，強健體魄外，還有一個很棒的效果，我們在調整步伐和呼吸節奏時，同時也讓大腦運作進而產生專注力去執行這些連貫動作</p>
+                                     <a href="#" class="text-success  fw-bold  stretched-link mt-auto">繼續閱讀</a>
+                                 </div>
+                           </div>
+                           <div class="col-4 d-none d-md-block">
+                               <img class="img-fluid rounded-3 h-100" style="object-fit: cover;" src="https://images.unsplash.com/photo-1611871233475-7c874af9ad2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHJ1bnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
                            </div>
                        </div>
                    </div>
                </div>
-             
+               <div class="col">
+                <!-- 卡片 flex-row 讓內容水平排列 -->
+                  <div class="card h-100">
+                      <div class="row g-0">
+                          <div class="col">
+                                <div class="p-4 d-flex flex-column h-100">
+                                    <strong class="d-inline-block text-success mb-2">育兒分享</strong>
+                                    <h3 class="mb-2">擁抱，有助子女情緒管理</h3>
+                                    <p class="text-muted">十二月 12</p>
+                                    <p class="card-text">當父母在擁抱子女的過程中而不說教，大部分受子女都會感到開心和甜蜜等正面情緒，有近8成父母表示擁抱子女時，自己情緒也會跟著變得平緩。時，同時也讓大腦運作進而產生專注力去執行這些連貫動作</p>
+                                    <a href="#" class="text-success  fw-bold  stretched-link mt-auto">繼續閱讀</a>
+                                </div>
+                          </div>
+                          <div class="col-4 d-none d-md-block">
+                              <img class="img-fluid rounded-3 h-100" style="object-fit: cover;" src="https://images.unsplash.com/photo-1605713288610-00c1c630ca1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVnfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
            </div>
-          
+
+            <!-- 內文及側欄安排 -->
+            <div class="row gy-3 gy-md-0 mb-5">
+                <!-- 內文 -->
+                <div class="col-md-8">
+                      <article>
+                             <h2>CSS -盒模型 box-model</h2>
+                             <p>Html 的每個元素都可以視為盒模型，並且對這個盒子去操控。</p>
+                             <div>
+                                 <div>
+                                    <h3>▶ Box Model 的定義</h3>
+                                    <img src="https://i.imgur.com/0nT8sW5.jpg" alt="pic" class="img-fluid">
+                                    <strong class="d-block mb-2">盒模型的組成分為四部分:</strong>
+                                     <ul>
+                                         <li>content (內容) : 圖片 100x 100 位置， HTML標籤包圍的內容。</li>
+                                         <li>padding :  box model 的內邊距。</li>
+                                         <li>border:  box model 的邊框，即調整盒模型時，以此和margin作為分界</li>
+                                         <li>margin:  box model 的外邊距，元素間的間距調整。</li>
+                                     </ul>
+                                 </div>
+                               
+                                 <div>
+                                     <div class="mb-2">
+                                        <h3>▶ content-box 與 border-box</h3>
+                                        <img src="https://i.imgur.com/0nT8sW5.jpg" alt="pic" class="img-fluid">
+                                        <strong  class="d-block mb-2">content-box(如下圖): 所設定的數值 ＋ border ＋ padding</strong>
+                                        <p class="mb-0">如圖片，原本設定寬度為100px ，實際盒模型寬度為</p>
+                                        <p class="mb-0">100px + ( padding 10px *2) + ( border 5px *2) = 130px。</p>
+                                     </div>
+                                     
+                                     <div>
+                                        <img src="https://i.imgur.com/g21EGIX.jpg"  alt="pic" class="img-fluid">
+                                        <strong class="d-block mb-2">border-box: 所設定的數值 ( 已包含 border 和 padding )</strong>
+                                        <p>如圖片，原本設定寬度為100px ，實際盒模型寬度為 100px</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             
+                             <div>
+                                 <h3>兩者差異比較:</h3>
+                                 <p>以下為開發程式碼:</p>
+
+                                 <div class="mb-2">
+                                    <img class="mb-2 img-fluid" src="./img/程式碼.jpg" alt="">
+                                    <img class="mb-2 img-fluid" src="./img/程式碼 1.jpg" alt="">
+                                    <img class="img-fluid" src="https://i.imgur.com/46SqQq0.jpg" alt="">
+                                </div>
+
+                                <div>
+                                    <strong>如上圖兩者比較:</strong>
+                                    <p>
+                                        使用box-sizing: border-box 語法的好處，
+                                        即使調整 padding和border的數值，也不會因為元素變大而破版。
+                                    </p>
+                                </div>
+                             </div>
+                             <hr>
+                             <p class="mb-0">
+                                    <strong>參考出處:</strong> 
+                                    <small><a href="https://ithelp.ithome.com.tw/articles/10252827">Box-sizing - 金魚都能懂的CSS必學屬性</a></small>
+                             </p>
+                      </article>
+                </div>
+                <!-- 側欄 要有 sticky-top功能 -->
+                <div class="col-md-4">
+                    <div class="sticky-top" style="top:32px">
+                         <!-- 關於我 -->
+                    <div class="p-4 bg-light rounded">
+                        <h4>關於我</h4>
+                        <p>目前是位在餐飲業工作的廚師，為了學習前端領域的技術和知識，所創建的部落格。</p>
+                    </div>
+
+                    <!--封存 -->
+                    <div class="p-4">
+                        <h4>封存</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">2021年12月</a></li>
+                            <li><a href="#">2021年11月</a></li>
+                            <li><a href="#">2021年10月</a></li>
+                            <li><a href="#">2021年9月</a></li>
+                            <li><a href="#">2021年8月</a></li>
+                            <li><a href="#">2021年7月</a></li>
+                            <li><a href="#">2021年6月</a></li>
+                            <li><a href="#">2021年5月</a></li>
+                            <li><a href="#">2021年4月</a></li>
+                            <li><a href="#">2021年3月</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- 追蹤我 -->
+                    <div class="p-4">
+                        <h4>追蹤我</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">gitHub</a></li>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">Twttier</a></li>
+                        </ol>
+                    </div>
+                    </div>
+                   
+                </div>
+            </div>
     </div>
     <!-- 表尾 -->
    <footer class="bg-dark py-3 text-center">
